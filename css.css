@@ -9,7 +9,7 @@ a{
 }
 
 .header {
-    background-color: #6505a1;
+    background-color: #3498db;
     color: #ffffff;
     
     display: flex;
@@ -22,7 +22,7 @@ a{
     text-align: left;
     display: flex;
     align-items: center;
-    background-color: #8007cb;
+    background-color: #2b7db4 ;
     padding-left: 20px;
 }
 
@@ -47,8 +47,8 @@ a{
     margin-top: 4px;
     margin-right: 25px;
     height: 45px;
-    background-color: #7b05c4;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #3498db;
     padding: 10px 20px;
     border: 1px solid #ffffff ;
     border-radius: 10px;
@@ -65,11 +65,13 @@ a{
     margin-top: 30px;
 }
 
+/* informaccion */
+
 .info {
     
     align-items: center;
     margin-bottom: 20px;
-    width: 85%;
+    width: 45%;
     
 
 }
@@ -80,6 +82,7 @@ a{
     margin-bottom: 10px;
     width: 100%;
     text-align: center;
+    color: #273746;
 
 }
 
@@ -89,9 +92,11 @@ a{
     height: auto;
     object-fit: cover;
     margin-bottom: 20px;
-    border-radius: 20% solid #7b05c4;
+    border-radius: 20% solid aed6f1;
     text-align: center;
 }
+
+
 
 
 .datos {
@@ -110,7 +115,7 @@ a{
 }
 
 .inter i {
-    color: #6505a1;
+    color: #3498db;
     font-size: 20px;
     margin-right: 10px;
 }
@@ -121,7 +126,7 @@ a{
     margin: 5px;
     margin-top: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #7b05c4;
+    border-bottom: 2px solid #aed6f1;
 }
 
 .inter h2 {
@@ -142,45 +147,295 @@ a{
     margin-top: 50px;
     padding-bottom: 20px;
     text-align: center;
-    border-bottom: 2px solid #7b05c4;
+    border-bottom: 2px solid #aed6f1;
 }
 
+.about h2
+{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #273746;
+}
+
+.lenguages {
+    margin-top: 50px;
+}
+
+.languages {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #aed6f1;
+  border-radius: 10px;
+  background-color: #fdfefe;
+}
+
+.languages h2 {
+  text-align: center;
+  color: #273746;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.language {
+  margin-bottom: 20px;
+}
+
+.language-name {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.language-bar {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  margin: 5px 0;
+}
+
+.language-level {
+  height: 100%;
+  background-color: #aed6f1;
+  transition: width 0.6s ease;
+}
+
+.language-percent {
+  font-size: 14px;
+  color: #555;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #273746;
+    margin-left: 50px;
+
+}
+
+/* Experience: */
 
 .status {
-    margin-left: 50px;
+    margin-left: 60px;
     margin-right: 50px;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #7b05c4;
+    
 }
 
 .status h2 {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 5px;
-    border-bottom: 2px solid #7b05c4;
+    border-bottom: 2px solid #aed6f1;
+    color: #273746;
+}
+
+.status h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #273746;
+    margin-top: 10px;
+}
+
+.status h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #273746;
+    font-weight: 800;
+}
+
+.status .text {
+    margin-bottom: 20px;
 }
 
 .hided {
     font-size: 20px;
-    margin-bottom: 10px;
     opacity: 0.5;
-    color: #7403a4;
+    color: #aed6f1;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #aed6f1;
 }
 
+.fa-angle-right{
+    margin-left: 10px;
+    transition: transform 0.6s ease;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.exp {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+    background-color: #ffffff;
+    border: 1px solid #aed6f1;
+    padding: 0 15px;
+}
+
+.exp.open {
+    max-height: 5000px; 
+    padding: 15px;
+}
+
+.status .text {
+    margin-left: 20px;
+}
+
+.logo {
+    width: auto;
+    display: block;
+    height: 360px;
+    object-fit: cover;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+
+
+/* Habilidades: */
+
+
+
 .skills {
-    margin-left: 50px;
+    margin-left: 60px;
     margin-right: 50px;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
+.skills h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #aed6f1;
+    color: #273746;
+
+}
+
+.skill {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+    background-color: #ffffff;
+    border: 1px solid #aed6f1;
+    padding: 0 15px;
+}
+
+.skill.open {
+    max-height: 5000px; 
+    padding: 15px;
+}
+
+.skills-list {
+  margin: 20px auto;
+  margin-left: 25px;
+}
+
+.skill-object {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+  color: #273746;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  margin: 5px 0;
+}
+
+.progress {
+  height: 100%;
+  background-color: #aed6f1;
+  transition: width 0.6s ease;
+}
+
+.percentage {
+  font-size: 14px;
+  color: #555;
+}
+
+/* academic */
+
+.academics {
+    margin-left: 60px;
+    margin-right: 50px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.academics h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #aed6f1;
+    color: #273746;
+
+}
+
+.academic {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+    background-color: #ffffff;
+    border: 1px solid #aed6f1;
+    padding: 0 15px;
+}
+
+.academic.open {
+    max-height: 5000px; 
+    padding: 15px;
+}
+
+.education-section {
+  border-left: 4px solid #3498db; /* azul claro */
+  padding-left: 15px;
+  margin: 30px;
+}
+
+.education-entry {
+  margin-bottom: 30px;
+}
+
+.education-entry h3 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.education-entry em {
+  display: block;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.education-entry p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+/* banner */
+
 .banner {
     display: flex;
     margin: 50px;
-    border-bottom: 2px solid #a200ffa1;
+    border-bottom: 2px solid #aed6f1;
 }
 
 .titulobaner {
@@ -189,7 +444,7 @@ a{
     margin-bottom: 20px;
     font-size: 35px;
     font-weight: 700;
-    color: #6505a1;
+    color: #3498db;
 }
 
 .textbaner {
@@ -204,7 +459,7 @@ a{
     object-fit: cover;
     margin-left: 30px;
     margin-bottom: 5px;
-    border-radius: 20% solid #a200ffa1;
+    border-radius: 20% solid #aed6f1;
 }
 
 .textarea {
@@ -272,12 +527,12 @@ a{
    }
 
    .info {
-    width: 100%;
+    width: 95%;
     margin: 0;
    }
 
    .foto {
-    width: 100%;
+    width: 95%;
     
    }
 
@@ -289,6 +544,7 @@ a{
    .che {
     margin-bottom: 0;
     margin-left: 0;
+    width: 95%;
    }
 
    .status {
