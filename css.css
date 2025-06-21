@@ -1,0 +1,312 @@
+* {
+    font-family: "Inter", serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    background-color: #6505a1;
+    color: #ffffff;
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.head {
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    background-color: #8007cb;
+    padding-left: 20px;
+}
+
+.item {
+    margin-right: 40px;
+    display: inline-flex;
+}
+
+.item i {
+    font-size: 35px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.set {
+    align-items: center;
+    margin-top: 3px;
+    
+}
+
+.btn1 {
+    margin-top: 4px;
+    margin-right: 25px;
+    height: 45px;
+    background-color: #7b05c4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #ffffff ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contenido {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.info {
+    
+    align-items: center;
+    margin-bottom: 20px;
+    width: 85%;
+    
+
+}
+
+.info h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.foto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 20% solid #7b05c4;
+    text-align: center;
+}
+
+
+.datos {
+    margin-left: 5px;
+    
+    
+}
+
+.inter {
+    margin-right: 10px;
+    color: #000000;
+    display: flex;
+    cursor: pointer;
+    justify-items: center;
+    align-items: center;
+}
+
+.inter i {
+    color: #6505a1;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #7b05c4;
+}
+
+.inter h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.icons a {
+    color: #000000;
+    text-decoration: none;
+    
+}
+.icons i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.about {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #7b05c4;
+}
+
+
+.status {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #7b05c4;
+}
+
+.status h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #7b05c4;
+}
+
+.hided {
+    font-size: 20px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    color: #7403a4;
+}
+
+.skills {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.banner {
+    display: flex;
+    margin: 50px;
+    border-bottom: 2px solid #a200ffa1;
+}
+
+.titulobaner {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #6505a1;
+}
+
+.textbaner {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.imgbaner {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    border-radius: 20% solid #a200ffa1;
+}
+
+.textarea {
+    width: 60%;
+}
+
+.text {
+    font-size: 17px;
+}
+
+@media (max-width: 800px) {
+    .header {
+    display: block;
+    }
+   .head {
+    display: block;   
+    margin-left: 0;
+    padding-left: 5px;
+   }
+   .item i {
+    font-size: 30px;
+    margin-left: 0;
+   }
+
+   .set h2 {
+    font-size: 18px;
+   }
+
+   .set h3 {
+    font-size: 14px;
+   }
+
+   .btn1 {
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #ffffff ;
+    border-radius: 0px;
+
+   }
+
+
+
+   .banner {
+    display: block;
+    
+   }
+   .textbaner {
+    margin: 0;
+    
+   }
+   .textarea {
+    width: 100%;
+   }
+
+   .imgbaner {
+    width: 100%;
+   }
+
+
+   .contenido {
+    display: block;
+    margin: 0;
+    
+   }
+
+   .info {
+    width: 100%;
+    margin: 0;
+   }
+
+   .foto {
+    width: 100%;
+    
+   }
+
+   .about{
+    text-align: justify;
+   }
+
+
+   .che {
+    margin-bottom: 0;
+    margin-left: 0;
+   }
+
+   .status {
+    display: block;
+    margin-left: 10px;
+    margin-right: 0px;
+   }
+
+   .text {
+    text-align: justify;
+   }
+
+   .skills {
+    display: block;
+    margin-left: 10px;
+    margin-right: 0px;
+   }
+
+
+
+}
