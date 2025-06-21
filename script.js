@@ -25,9 +25,3 @@ academics.addEventListener('click', () => {
     iconacademic.classList.toggle('rotate');
 });
 
-document.getElementById('downloadBtn').addEventListener('click', function () {
-    const link = document.createElement('a');
-    link.href = 'CV Santigo-E.C.pdf'; // cambia esto a tu archivo real
-    link.download = 'SEC-CV.pdf'; // nombre con el que se descargará
-    link.click();
-  });
