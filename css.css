@@ -1,11 +1,13 @@
 * {
-    font-family: "Inter", serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
+
+/* Estilos generales */
+
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
     box-sizing: border-box;
 }
 
@@ -79,19 +81,17 @@ a{
     font-size: 16px;
     line-height: 1.5;
     display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 /* informaccion */
 
 .info {
-    
     align-items: center;
     margin-bottom: 20px;
-    width: 90%;
-    min-width: 370px;
+    width: 100%;
+
 }
 
 .info h1 {
@@ -183,12 +183,10 @@ a{
 
 .contact-info {
   margin: 20px;
-  width: 80%;
   padding: 15px;
   background-color: #f4faff;
   border: 1px solid #aed6f1;
   border-radius: 10px;
-  max-width: 500px;
   font-size: 16px;
 }
 
@@ -292,25 +290,22 @@ a{
     margin-bottom: 20px;
     color: #273746;
     margin-left: 50px;
+    text-align: center;
 
 }
 
 /* Experience: */
 
 .status {
-    margin-left: 60px;
-    margin-right: 50px;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    
+    margin: 15px 20px;
+
 }
 
 .status h2 {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 5px;
-    border-bottom: 2px solid #aed6f1;
     color: #273746;
 }
 
@@ -338,7 +333,12 @@ a{
     color: #aed6f1;
     cursor: pointer;
     margin-bottom: 5px;
-    border-bottom: 2px solid #aed6f1;
+    transition: 0.3s transform;
+    transform-origin: left center;
+}
+
+.hided:hover {
+    transform: scale(1.1);
 }
 
 .fa-angle-right{
@@ -395,18 +395,14 @@ a{
 
 
 .skills {
-    margin-left: 60px;
-    margin-right: 50px;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 15px 20px;
 }
 
 .skills h2 {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 5px;
-    border-bottom: 2px solid #aed6f1;
     color: #273746;
 
 }
@@ -461,18 +457,14 @@ a{
 /* academic */
 
 .academics {
-    margin-left: 60px;
-    margin-right: 50px;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 15px 20px;
 }
 
 .academics h2 {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 5px;
-    border-bottom: 2px solid #aed6f1;
     color: #273746;
 
 }
@@ -526,7 +518,7 @@ a{
 
 .banner {
     display: flex;
-    margin: 50px;
+    margin: 10px 50px;
     border-bottom: 2px solid #aed6f1;
     align-items: center; 
 }
@@ -553,7 +545,6 @@ a{
     object-fit: cover;
     margin-left: 80px;
     margin-bottom: 5px;
-    border-radius: 20% solid #aed6f1;
 }
 
 .textarea {
@@ -565,7 +556,91 @@ a{
     font-size: 19px;
 }
 
+.logo {
+    width: 60%;
+    height: auto;
+  }
 
+
+/* responsividad */
+
+/* Añade esto al principio de tu CSS */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2b7db4;
+  --text-color: #273746;
+  --light-bg: #f4faff;
+  --border-color: #aed6f1;
+}
+
+/* Media Queries mejor organizadas */
+@media (max-width: 1200px) {
+  .banner {
+    align-items: center;
+    margin: 10px;
+  }
+
+  .titulobaner {
+    font-size: 30px;
+    margin: 10px 20px;
+  }
+
+  .textbaner {
+    margin: 5px 20px;
+  }
+
+  .contenido {
+    margin: 15px 10px;
+    padding: 5px;
+    
+  }
+
+  .che {
+    width: 75%;
+  }
+
+  .status {
+    margin: 15px 10px;
+  }
+
+  .skills {
+    margin: 15px 10px;
+  }
+
+  .academics {
+        margin: 15px 10px;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .info {
+    width: 40%;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  .hided {
+    width: 100%;
+
+  }
+
+  .academic.open {
+    padding: 0;
+  }
+
+
+}
 
 @media (max-width: 920px) {
     .header {
@@ -598,22 +673,37 @@ a{
 
    }
 
-
-
    .banner {
     display: block;
+    margin: 25px;
     
    }
+
+   .titulobaner {
+    margin: 15px 0;
+    font-size: 35px;
+    text-align: center;
+   }
+
    .textbaner {
     margin: 0;
+    font-size: 22px;
     
    }
    .textarea {
     width: 100%;
    }
 
-   .imgbaner {
+   .imgcontainer {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .imgbaner {
+    width: 60%;
+    margin : 0;
    }
 
 
@@ -624,8 +714,23 @@ a{
    }
 
    .info {
-    width: 90%;
-    margin: 0;
+    width: auto;
+    margin: 10px;
+   }
+
+   .info h1 {
+    font-size: 30px;
+    text-align: center;
+
+   }
+
+   .datos {
+    margin-left: 20px;
+   }
+
+   .inter h2 {
+    font-size: 22px;
+    margin-left: 0;
    }
 
    .foto {
@@ -633,33 +738,463 @@ a{
     
    }
 
-   .about{
-    text-align: justify;
+   .icons {
+
    }
 
+   .about{
+    text-align: justify;
+    margin-top: 20px;
+   }
+
+   .about h2 {
+    font-size: 30px;
+    text-align: center;
+
+   }
 
    .che {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     margin-left: 0;
-    width: 95%;
+    width: 100%;
+   }
+
+   .che h2 {
+    font-size: 25px;
+    margin: 10px 10px;
    }
 
    .status {
     display: block;
-    margin-left: 10px;
-    margin-right: 0px;
+    margin: 0 10px;
    }
 
    .text {
     text-align: justify;
+    font-size: 20px;
+    margin: 0px 10px;
    }
 
    .skills {
     display: block;
-    margin-left: 10px;
-    margin-right: 0px;
+    margin: 0 10px;
+   }
+
+   .lenguages {
+    margin: 0 15px;
+
+   }
+
+   .lenguages h2 {
+        text-align: center;
+   }
+
+   .lenguage {
+    margin: 10px 0;
+   }
+
+   .language-name {
+    font-size: 20px;
+   }
+
+   .language-percent{
+    font-size: 18px;
+   }
+
+   .hided {
+    width: 100%;
+    margin-top: 10px;
+
+   }
+
+   .title {
+    text-align: center;
+    margin-top: 20px;
+   }
+
+   .academics {
+    margin: 0 10px;
+   }
+
+   .contact-info {
+    padding: 8px;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px auto;
+    max-width:none;
+
+   }
+
+   .contact-info h2 {
+    font-size: 30px;
+    text-align: center;
+   }
+
+   .contenido {
+    padding: 0;
+   }
+
+   .logo {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: block;
+    }
+   .head {
+    display: block;   
+    margin-left: 0;
+    padding-left: 5px;
+   }
+   .item i {
+    font-size: 30px;
+    margin-left: 0;
+   }
+
+   .set h2 {
+    font-size: 18px;
+   }
+
+   .set h3 {
+    font-size: 14px;
+   }
+
+   .btn1 {
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #ffffff ;
+    border-radius: 0px;
+
+   }
+
+   .banner {
+    display: block;
+    margin: 25px;
+    
+   }
+
+   .titulobaner {
+    margin: 15px 0;
+    font-size: 25px;
+    text-align: center;
+   }
+
+   .textbaner {
+    margin: 0;
+    font-size: 16px;
+    
+   }
+   .textarea {
+    width: 100%;
+   }
+
+   .imgcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .imgbaner {
+    width: 60%;
+    margin : 0;
    }
 
 
+   .contenido {
+    display: block;
+    margin: 0;
+    
+   }
+
+   .info {
+    width: auto;
+    margin: 10px;
+   }
+
+   .info h1 {
+    font-size: 22px;
+    text-align: center;
+
+   }
+
+   .inter h2 {
+    font-size: 18px;
+    margin-left: 0;
+   }
+
+   .foto {
+    width: 95%;
+    
+   }
+
+   .icons {
+
+   }
+
+   .about{
+    text-align: justify;
+    margin-top: 20px;
+   }
+
+   .about h2 {
+    font-size: 22px;
+    text-align: center;
+
+   }
+
+
+   .che {
+    margin-bottom: 10px;
+    margin-left: 0;
+    width: 100%;
+   }
+
+   .che h2 {
+    font-size: 20px;
+    margin: 10px 10px;
+   }
+
+   .status {
+    display: block;
+    margin: 0 10px;
+   }
+
+   .text {
+    text-align: justify;
+    font-size: 18px;
+   }
+
+   .skills {
+    display: block;
+    margin: 0 10px;
+   }
+
+   .lenguages {
+    margin: 0 15px;
+
+   }
+
+   .lenguages h2 {
+        text-align: center;
+   }
+
+   .lenguage {
+    margin: 10px 0;
+   }
+
+   .hided {
+    width: 100%;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+
+   }
+
+   .academics {
+    margin: 0 10px;
+   }
+
+   .contact-info {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px auto;
+    max-width:none;
+
+   }
+
+   .contact-info h2 {
+    font-size: 22px;
+    text-align: center;
+   }
+
+   .contenido {
+    padding: 0;
+   }
+
+   .logo {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: block;
+    }
+   .head {
+    display: block;   
+    margin-left: 0;
+    padding-left: 5px;
+   }
+   .item i {
+    font-size: 30px;
+    margin-left: 0;
+   }
+
+   .set h2 {
+    font-size: 18px;
+   }
+
+   .set h3 {
+    font-size: 14px;
+   }
+
+   .btn1 {
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #ffffff ;
+    border-radius: 0px;
+
+   }
+
+   .banner {
+    display: block;
+    margin: 25px;
+    
+   }
+
+   .titulobaner {
+    margin: 15px 0;
+    font-size: 25px;
+    text-align: center;
+   }
+
+   .textbaner {
+    margin: 0;
+    font-size: 16px;
+    
+   }
+   .textarea {
+    width: 100%;
+   }
+
+   .imgbaner {
+    width: 100%;
+    margin : 0 auto;
+   }
+
+
+   .contenido {
+    display: block;
+    margin: 0;
+    
+   }
+
+   .info {
+    width: auto;
+    margin: 10px;
+   }
+
+   .info h1 {
+    font-size: 22px;
+    text-align: center;
+
+   }
+
+   .inter h2 {
+    font-size: 18px;
+    margin-left: 0;
+   }
+
+   .foto {
+    width: 95%;
+    
+   }
+
+   .icons {
+
+   }
+
+   .about{
+    text-align: justify;
+    margin-top: 20px;
+   }
+
+   .about h2 {
+    font-size: 22px;
+    text-align: center;
+
+   }
+
+
+   .che {
+    margin-bottom: 10px;
+    margin-left: 0;
+    width: 100%;
+   }
+
+   .che h2 {
+    font-size: 22px;
+    margin: 10px 10px;
+   }
+
+   .status {
+    display: block;
+    margin: 0 10px;
+   }
+
+   .text {
+    text-align: justify;
+    font-size: 18px;
+   }
+
+   .skills {
+    display: block;
+    margin: 0 10px;
+   }
+
+   .lenguages {
+    margin: 0;
+
+   }
+
+   .lenguages h2 {
+    text-align: center;
+   }
+
+   .hided {
+    width: 100%;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+
+   }
+
+   .academics {
+    margin: 0 10px;
+   }
+
+   .contact-info {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px auto;
+
+   }
+
+   .contenido {
+    padding: 0;
+   }
+
+   .title {
+    text-align: center;
+
+    }
+
+    .logo {
+        width: 100%;
+        height: fit-content;
+    }
+
 
 }
+
