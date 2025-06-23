@@ -25,3 +25,13 @@ academics.addEventListener('click', () => {
     iconacademic.classList.toggle('rotate');
 });
 
+
+const references = document.querySelector('.references');
+const reference = document.querySelector('.reference');
+const iconreference = document.querySelector('.reference_i');
+
+references.addEventListener('click', () => {
+    reference.classList.toggle('open');
+    iconreference.classList.toggle('rotate');
+});
+
